@@ -283,7 +283,7 @@ for fold in range(k_folds):
             fold_y_probs.extend(probs.cpu().numpy())
 
     # ─────────────────────────────────────────────────────
-    # NEW: SUBJECT-LEVEL aggregation for this fold
+    # SUBJECT-LEVEL aggregation for this fold
     # test_dataset.samples is in the same order as test_loader (shuffle=False),
     # so index i in fold_y_pred corresponds to test_dataset.samples[i].
     # ─────────────────────────────────────────────
